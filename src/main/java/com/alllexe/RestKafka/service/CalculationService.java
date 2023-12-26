@@ -45,6 +45,7 @@ public class CalculationService {
 
         // get consumer record
         ConsumerRecord<String, Response> consumerRecord = sendAndReceive.get();
+
         // return consumer value
         return consumerRecord.value();
     }

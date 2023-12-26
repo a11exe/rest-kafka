@@ -18,11 +18,4 @@ public class CalculateController {
     public Response calculateSum(@RequestBody Request request) {
         return calculationService.calculateSum(request);
     }
-
-    @PostMapping(value = "/subtract")
-    public Response calculateSubtract(@RequestBody Request request) {
-        return Response.builder()
-                .result(request.getFirstNumber() - request.getSecondNumber())
-                .build();
-    }
 }
