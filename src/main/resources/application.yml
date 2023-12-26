@@ -1,0 +1,10 @@
+kafka:
+  bootstrap-servers: localhost:9092
+  consumer-group: rest
+  topic:
+    sum:
+      request: sum-request
+      reply: sum-replay
+    subtract:
+      request: subtract-request
+      reply: subtract-replay
